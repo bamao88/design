@@ -1,8 +1,13 @@
 +++
-title= "Apollo Theme"
+title= "设计师|八毛"
 template = "homepage.html"
 +++
 
-Thanks for checking out this theme!
+欢迎浏览我的网站
 
-Checkout all the [options you can configure](./posts/configuration) and the [example pages](./tags/example/).
+* [关于我](./about)
+* [个人简历](./cv/resume.pdf)
+* [作品](./projects)
+* 及其他
+
+Have a good day!
