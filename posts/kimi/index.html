@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<html class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    
+    
+    
+    <title>
+         借助 kimi 和 python 制作作品集
+        
+    </title>
+
+        
+            <meta property="og:title" content="借助 kimi 和 python 制作作品集" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="八毛的个人站点" />
+         
+     
+
+     
+         
+             <meta name="description" content="八毛的个人站点" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;icon&#x2F;favicon.png />
+    
+
+    
+    
+        <link href=https://bamao88.github.io/design/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://bamao88.github.io/design/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://bamao88.github.io/design/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://bamao88.github.io/design/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="八毛|DESIGNER" href="https://bamao88.github.io/design/atom.xml">
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://bamao88.github.io/design/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://bamao88.github.io/design/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+    <script src=https://bamao88.github.io/design/js/themetoggle.js></script>
+    
+        <script>setTheme(getSavedTheme());</script>
+    
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://bamao88.github.io/design/main.css />
+
+    
+</head>
+
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+        <a href=https:&#x2F;&#x2F;bamao88.github.io&#x2F;design>八毛|DESIGNER</a>
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+        <a href=https://bamao88.github.io/design/posts style="margin-left: 0.5em">&#x2F;posts</a>
+        
+        <a href=https://bamao88.github.io/design/projects style="margin-left: 0.5em">&#x2F;projects</a>
+        
+        <a href=https://bamao88.github.io/design/about style="margin-left: 0.5em">&#x2F;about</a>
+        
+        <a href=https://bamao88.github.io/design/tags style="margin-left: 0.5em">&#x2F;tags</a>
+        
+
+        
+        |<a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+            <img src=https://bamao88.github.io/design/feather/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+            <img src=https://bamao88.github.io/design/feather/moon.svg id="moon-icon" alt="Dark" />
+        </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+<main>
+    <article>
+        <div class="title">
+            
+            
+    <div class="page-header">
+        借助 kimi 和 python 制作作品集<span class="primary-color" style="font-size: 1.6em">.</span>
+    </div>
+
+
+                <div class="meta">
+                    
+                        Posted on <time>2024-10-13</time>
+                    
+
+                    
+                        :: Updated on <time>2024-10-14</time>
+                    
+
+                    
+
+                    
+                    
+                            <span class="tags-label"> :: Tags:</span>
+                            <span class="tags">
+                                    <a href="https://bamao88.github.io/design/tags/kimi/" class="post-tag">kimi</a>, 
+                                
+                                    <a href="https://bamao88.github.io/design/tags/python/" class="post-tag">python</a>
+                                
+                            </span>
+                    
+
+                    
+                    
+
+                    
+
+                </div>
+        </div>
+
+        
+
+        
+        
+        
+        
+
+        <section class="body">
+            <p>在制作作品集过程中，发现不太方便将 Figma 演示内容导出</p>
+<p>向 kimi 提问，“使用 python 将 mov 文件转换为 gif 格式”</p>
+<p>生成的反馈：</p>
+<p><img src="https://bamao88.github.io/design/posts/kimi/xxx.png" alt="kimi 1" /></p>
+<p>对应的 python 代码：</p>
+<pre data-lang="python" style="background-color:#fafafa;color:#61676c;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#fa6e32;">import </span><span>imageio
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># 指定输入和输出文件名
+</span><span>input_file </span><span style="color:#ed9366;">= </span><span style="color:#86b300;">&#39;input.mov&#39;
+</span><span>output_file </span><span style="color:#ed9366;">= </span><span style="color:#86b300;">&#39;output.gif&#39;
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># 读取视频
+</span><span>reader </span><span style="color:#ed9366;">= </span><span>imageio</span><span style="color:#ed9366;">.</span><span style="color:#f29718;">get_reader</span><span>(input_file)
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># 写入 GIF 文件
+</span><span style="color:#fa6e32;">with </span><span>imageio</span><span style="color:#ed9366;">.</span><span style="color:#f29718;">get_writer</span><span>(output_file</span><span style="color:#61676ccc;">, </span><span style="color:#ff8f40;">mode</span><span style="color:#ed9366;">=</span><span style="color:#86b300;">&#39;I&#39;</span><span>) </span><span style="color:#fa6e32;">as </span><span>writer:
+</span><span>    </span><span style="color:#fa6e32;">for </span><span>frame </span><span style="color:#fa6e32;">in </span><span>reader:
+</span><span>        writer</span><span style="color:#ed9366;">.</span><span style="color:#f29718;">append_data</span><span>(frame)
+</span><span>
+</span><span style="color:#f07171;">print</span><span>(</span><span style="color:#fa6e32;">f</span><span style="color:#86b300;">&quot;转换完成，输出文件：</span><span>{output_file}</span><span style="color:#86b300;">&quot;</span><span>)
+</span></code></pre>
+
+        </section>
+    </article>
+</main>
+
+
+
+        
+
+    </div>
+</body>
+
+</html>
